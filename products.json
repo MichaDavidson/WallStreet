@@ -1,0 +1,4 @@
+[
+    {"id": 11, "nombre":"Gaseosas", "descripcion":"Línea coca-cola", "precio": 200, "inCart": 0}, 
+    {"id": 12, "nombre":"Agua", "descripcion":"Sin/con gas", "precio": 180, "inCart": 0}
+]

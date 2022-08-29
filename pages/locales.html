@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locales</title>
+    <meta name="description" content="Te esperamos en nuestros locales de Belgrano, Colegiales, Núñez y Urquiza">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="header__wallstreet" href="../index.html">
+                    <img class=wallstreet__logo src="../images/logo.png" alt="logo">
+                    <p class="mx-auto text-center wallstreet__header">Wall Street Burgers</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">MENÚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="locales.html">LOCALES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" id="botonPedido" class="btn btn-outline-dark nav-item" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                        <i class="bi-cart-fill me-1"></i>
+                        TU PEDIDO
+                        <span id="carritoPedido" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tu pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="productosCarrito">
+                    <!-- EN ESTE DIV VAN LOS PRODUCTOS DEL CARRITO -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary modalBtn__seguir" data-bs-dismiss="modal">SEGUIR PIDIENDO</button>
+                        <button type="button" class="btn btn-primary modalBtn__comprar" onclick="finalizarPedido()">FINALIZAR PEDIDO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="h1__titulo" id="nav"><p class="h1__titulotexto">Locales</p></h1>
+        <a href="https://www.rappi.com.ar/" target="_blank"><img class="rappi" src="../images/rappi.png" alt="rappi"></a>
+        <a href="#nav"><img class="flecha" src="../images/flecha1.png" alt="ir hacia arriba"></a>
+        <main class="pagina__locales">
+            <div class="container-fluid">
+                <section class="row locales__barrios">
+                    <div class="col-12 col-md-6 belgrano">
+                        <h5 class="belgrano__titulo">Wall Street Burgers Belgrano</h5>
+                            <div class="belgrano__detalles">
+                                <p>Vuelta de Obligado 2243, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5678</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Vuelta+de+Obligado+2243,+Buenos+Aires/@-34.5491066,-58.4515584,13z/data=!4m5!4m4!1m1!4e2!1m0!3e0" target="_blank" class="btn belgrano__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 col-md-6 colegiales">
+                        <h5 class="colegiales__titulo">Wall Street Burgers Colegiales</h5>
+                            <div class="colegiales__detalles">
+                                <p>Virrey Aviles 3340, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5684</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Virrey+Avil%C3%A9s+3340,+Buenos+Aires/@-34.5748171,-58.4639422,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb5d92c2a4c83:0xad7d79740476ecad!2m2!1d-58.4595648!2d-34.5748172!3e0" target="_blank" class="btn colegiales__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 col-md-6 nunez">
+                        <h5 class="nunez__titulo">Wall Street Burgers Núñez</h5>
+                            <div class="nunez__detalles">
+                                <p>O'Higgins 3571, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5683</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//O'Higgins+3571,+Buenos+Aires/@-34.5473079,-58.4684862,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb69de965a04f:0xfcb280c5caeb2646!2m2!1d-58.4641088!2d-34.547308!3e0" target="_blank" class="btn nunez__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 col-md-6 urquiza">
+                        <h5 class="urquiza__titulo">Wall Street Burgers Urquiza</h5>
+                            <div class="urquiza__detalles">
+                                <p>Mendoza 5281, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5679</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Mendoza+5281,+C1431CIO+CABA/@-34.5780762,-58.4900979,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb6681ad57707:0xe98e80eb1ecbe64f!2m2!1d-58.4857205!2d-34.5780763!3e0" target="_blank" class="btn urquiza__btn">¿Cómo llego?</a>
+                    </div>
+                </section>
+                <div class="row">
+                    <img class="col-12 locales__imagen"src="../images/locales.jpg" alt="Locales Wall Street">
+                </div>
+            </div>
+        </main>
+        <section class="container-fluid footer__primerparte">
+            <div class="primerparte__pages row">
+                <div class="col-4 footer__suscripcionpag">
+                    <p class="suscripcion__texto">Seguinos y disfrutá de nuestros beneficios...</p>
+                    <p>Suscribite a nuestro newsletter y recibí las últimas novedades, promociones y descuentos.</p>
+                    <div class="suscripcion__form">
+                        <input type="email" class="form-control suscripcion__input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com.ar">
+                        <button class="btn suscripcion__boton" type="submit">Suscribirme!</button>
+                    </div>
+                </div>
+                <div class="col-4 footer__contactopag">
+                    <p class="contacto__texto">Nos encanta saber de vos!</p>
+                    <p>Compartinos tus consultas, comentarios o sugerencias.</p>
+                    <form class="contacto__form" action="">
+                        <input type="name" class="form-control contacto__input" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        <input type="email" class="form-control contacto__input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        <textarea class="form-control contacto__input" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje!"></textarea>
+                        <button class="btn contacto__boton" type="submit">Enviar! </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer__segundaparte">
+            <div class="segundaparte__logo">
+                <a href="../index.html"><img class="footer__logo" src="../images/logo.png" alt="logo"></a>
+                <a href="../index.html" class="mx-auto text-center footer__wallstreet">Wall Street Burgers</a>
+            </div>
+            <div class="segundaparte__medio">
+                <div class="segundaparte__navbar">
+                    <a class="segundaparte__navitems mb-1 me-2" href="menu.html">MENÚ</a>
+                    <a class="segundaparte__navitems mb-1 ms-2 me-2" href="locales.html">LOCALES</a>
+                    <a class="segundaparte__navitems ms-2 me-2 mb-1" href="nosotros.html">NOSOTROS</a>
+                    <a class="segundaparte__navitems ms-2 mb-1" href="oportunidades.html">OPORTUNIDADES</a>
+                </div>
+                <p class="mt-2">WALL STREET BURGERS. TODOS LOS DERECHOS RESERVADOS 1992-2022.</p>
+            </div>
+            <div class="segundaparte__redes">
+                <a href=""><img class="footer__facebook" src="../images/facebook.png" alt="facebook"></a>
+                <a href=""><img class="footer__instagram" src="../images/instagram.png" alt="instagram"></a>
+                <a href=""><img class="footer__whatsapp" src="../images/whatsapp.png" alt=""></a>
+            </div>
+        </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

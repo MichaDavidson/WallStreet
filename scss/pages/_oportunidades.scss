@@ -1,0 +1,30 @@
+.oportunidades__container {
+    background-color: black;
+}
+.oportunidades__texto {
+    text-align: justify;
+    color: white;
+    padding: 3rem;
+    justify-items: center;
+    align-items: center;
+    min-height: 25rem;
+    padding-top: 6rem;
+}
+
+.oportunidades__form {
+    padding-top: 4rem;
+    padding-left: 6rem;
+}
+
+.oportunidades__enviar {
+    border: none;
+    color: white;
+    background-color: $verdemanzana;
+    font-family: 'Lobster', cursive;
+}
+
+.oportunidades__imagen {
+    padding-left: 0;
+    padding-right: 0;
+}
+

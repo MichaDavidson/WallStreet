@@ -1,0 +1,69 @@
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__nav {
+    background-color: $verdemanzana;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    border-radius: 30px;
+    font-family: $font; 
+    margin-top: 1rem;
+}
+
+.burgers__container, .acompanantes__container, .postres__container, .bebidas__container {
+    justify-content: center;
+}
+
+.menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
+    background-color: white;
+    color:black;
+    width: 50%;
+    text-align: center;
+    font-family: $font;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+
+.Bronx, .Queens, .Manhattan, .Brooklyn, .Bigapple, .Wallstreet, .Papas, .Batatas, .BananaSplit, .Brownie, .Gaseosas, .Agua {
+    margin: 0.5rem;
+    width: 20rem;
+    padding: 0;
+}
+
+.Brooklyn__img, .Manhattan__img, .Bronx__img, .Queens__img, .Bigapple__img, .Wallstreet__img, .Papas__img, .Batatas__img, .Gaseosas__img, .Agua__img, .Brownie__img, .BananaSplit__img {
+    width: 100%;
+    margin: 0;
+    border-radius: 30px;
+} 
+
+.Bronx__titulo, .Queens__titulo, .Manhattan__titulo, .Brooklyn__titulo, .Bigapple__titulo, .Wallstreet__titulo, .Papas__titulo, .Batatas__titulo, .Brownie__titulo, .BananaSplit__titulo, .Gaseosas__titulo, .Agua__titulo {
+    font-family: $font;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    background-color: $verdemanzana;
+    color: white;
+    border-radius: 30px;
+    padding:0.5rem;
+}
+
+.Bronx__detalles, .Queens__detalles, .Manhattan__detalles, .Brooklyn__detalles, .Bigapple__detalles, .Wallstreet__detalles, .Papas__detalles, .Batatas__detalles, .Brownie__detalles, .BananaSplit__detalles, .Gaseosas__detalles, .Agua__detalles {
+    margin: 0.5rem;
+    text-align: center;
+}

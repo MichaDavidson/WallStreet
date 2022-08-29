@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.navbar {
+  background-image: url(../images/wallpaper.webp);
+  height: 6.5rem;
+  position: unset;
+  top: 0px;
+  z-index: 1; }
+
+.header__wallstreet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0.3rem;
+  background-color: #8fb339;
+  font-family: 'Lobster', cursive; }
+
+.wallstreet__logo {
+  width: 4.5rem;
+  height: 4.5rem; }
+
+.wallstreet__header {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  color: black;
+  padding-right: 0.2rem; }
+
+.nav-item {
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #8fb339; }
+
+.navbar-collapse {
+  flex-grow: 0; }
+
+.navbar-toggler {
+  border: solid 5px;
+  background-color: #d0f28286; }
+
+.modal-header {
+  font-family: "Lobster", cursive;
+  background-color: #8fb339; }
+
+.modalBtn__seguir {
+  background-color: black; }
+
+.modalBtn__comprar {
+  background-color: #8fb339; }
+
+.footer__primerparte {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  width: auto; }
+
+.footer__primerparteindex {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem; }
+
+.primerparte__pages {
+  justify-content: space-around;
+  background-image: url(../images/wallpaper.webp); }
+
+.footer__suscripcionpag, .footer__contactopag {
+  background-color: black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px; }
+
+.footer__suscripcion, .footer__contacto {
+  background-color: black;
+  padding: 1rem; }
+
+.suscripcion__texto, .contacto__texto {
+  font-family: 'Lobster', cursive;
+  font-size: 1.3rem; }
+
+.suscripcion__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.suscripcion__input {
+  width: 50%;
+  margin: 1rem; }
+
+.suscripcion__boton, .contacto__boton {
+  background-color: #8fb339;
+  color: white;
+  border: none;
+  font-family: 'Lobster', cursive;
+  height: max-content; }
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contacto__input {
+  width: 50%;
+  margin: 1rem; }
+
+.footer__segundaparte {
+  display: flex;
+  flex-direction: row;
+  background-color: #8fb339;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  justify-content: space-between; }
+
+.segundaparte__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.footer__logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.2rem; }
+
+.footer__wallstreet {
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem; }
+
+.segundaparte__medio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.segundaparte__navbar {
+  display: flex;
+  flex-direction: row; }
+
+.segundaparte__navitems {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px; }
+
+.segundaparte__redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10rem; }
+
+.footer__whatsapp, .footer__facebook, .footer__instagram {
+  width: 2rem;
+  height: 2rem; }
+
+.index__mejoresburgers {
+  background-color: #8fb339;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+  padding-top: 1.2rem; }
+
+.index__container {
+  background-image: url(../images/indexfoto.jpg); }
+
+.index__imagen {
+  width: 100%; }
+
+.index__burgers {
+  background-image: url(../images/wallpaper.webp); }
+
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white; }
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.menu__nav {
+  background-color: #8fb339;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  border-radius: 30px;
+  font-family: "Lobster", cursive;
+  margin-top: 1rem; }
+
+.burgers__container, .acompanantes__container, .postres__container, .bebidas__container {
+  justify-content: center; }
+
+.menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
+  background-color: white;
+  color: black;
+  width: 50%;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 30px;
+  font-size: 2rem; }
+
+.Bronx, .Queens, .Manhattan, .Brooklyn, .Bigapple, .Wallstreet, .Papas, .Batatas, .BananaSplit, .Brownie, .Gaseosas, .Agua {
+  margin: 0.5rem;
+  width: 20rem;
+  padding: 0; }
+
+.Brooklyn__img, .Manhattan__img, .Bronx__img, .Queens__img, .Bigapple__img, .Wallstreet__img, .Papas__img, .Batatas__img, .Gaseosas__img, .Agua__img, .Brownie__img, .BananaSplit__img {
+  width: 100%;
+  margin: 0;
+  border-radius: 30px; }
+
+.Bronx__titulo, .Queens__titulo, .Manhattan__titulo, .Brooklyn__titulo, .Bigapple__titulo, .Wallstreet__titulo, .Papas__titulo, .Batatas__titulo, .Brownie__titulo, .BananaSplit__titulo, .Gaseosas__titulo, .Agua__titulo {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  background-color: #8fb339;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem; }
+
+.Bronx__detalles, .Queens__detalles, .Manhattan__detalles, .Brooklyn__detalles, .Bigapple__detalles, .Wallstreet__detalles, .Papas__detalles, .Batatas__detalles, .Brownie__detalles, .BananaSplit__detalles, .Gaseosas__detalles, .Agua__detalles {
+  margin: 0.5rem;
+  text-align: center; }
+
+.pagina__locales {
+  background-color: black;
+  color: white; }
+
+.locales__barrios {
+  justify-content: center;
+  align-items: center; }
+
+.belgrano, .colegiales, .nunez, .urquiza {
+  border: 0.5rem solid white;
+  border-radius: 40px;
+  text-align: center;
+  width: 30rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  background-color: black; }
+
+.belgrano__titulo, .colegiales__titulo, .urquiza__titulo, .nunez__titulo {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  color: #8fb339; }
+
+.colegiales__btn, .belgrano__btn, .nunez__btn, .urquiza__btn {
+  font-family: 'Lobster', cursive;
+  background-color: #8fb339;
+  color: white;
+  margin-top: 0.5rem; }
+
+.locales__imagen {
+  margin: 0;
+  padding: 0;
+  padding-top: 2rem; }
+
+.nosotros__historia, .nosotros__vegan {
+  text-align: justify;
+  padding: 4rem; }
+
+.nosotros__historiaimg, .nosotros__veganimg {
+  padding: 0;
+  margin: 0; }
+
+.h2__vegan, .h2__historia {
+  font-family: 'Lobster', cursive;
+  text-align: center; }
+
+.oportunidades__container {
+  background-color: black; }
+
+.oportunidades__texto {
+  text-align: justify;
+  color: white;
+  padding: 3rem;
+  justify-items: center;
+  align-items: center;
+  min-height: 25rem;
+  padding-top: 6rem; }
+
+.oportunidades__form {
+  padding-top: 4rem;
+  padding-left: 6rem; }
+
+.oportunidades__enviar {
+  border: none;
+  color: white;
+  background-color: #8fb339;
+  font-family: 'Lobster', cursive; }
+
+.oportunidades__imagen {
+  padding-left: 0;
+  padding-right: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62,5%;
+  width: 100%;
+  height: 100%; }
+
+:root {
+  scroll-padding-top: 7.5rem;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: white; }
+
+p {
+  margin: 0; }
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive; }
+
+body {
+  background-color: white;
+  height: 100vh; }
+
+.h1__titulo {
+  text-align: center;
+  background-image: url(../images/fondotitulospared.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 14rem;
+  vertical-align: middle; }
+
+.h1__titulotexto {
+  transform: translateY(8rem);
+  color: white; }
+
+.rappi {
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  top: 7rem;
+  right: 0.5rem; }
+
+.flecha {
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  top: 12rem;
+  right: 0.5rem;
+  background-color: black;
+  border-radius: 50px; }
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 0.5rem; }
+
+.total {
+  font-family: "Lobster", cursive;
+  background-color: #8fb339;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.5rem; }
+
+/* media query especial navbar  */
+@media (max-width: 992px) {
+  .nav-item {
+    width: fit-content;
+    padding: 0.5rem; } }
+
+/* media query tablet  */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%; } }
+
+/* media query mobile  */
+@media (max-width: 500px) {
+  html {
+    font-size: 62%; }
+  .h1__titulo {
+    height: 10rem; }
+  .h1__titulotexto {
+    transform: translateY(4.8rem); }
+  .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
+    margin: 0;
+    padding: 0; }
+  .bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .brownie, .gaseosas, .agua {
+    width: 15rem; }
+  .nosotros__veganimg {
+    order: -1; }
+  .oportunidades__enviar {
+    margin-bottom: 2rem; }
+  .oportunidades__texto {
+    min-height: 0;
+    padding-top: 2rem; }
+  .oportunidades__form {
+    padding-top: 0;
+    padding-left: 11rem; }
+  .footer__segundaparte {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .segundaparte__logo {
+    flex-direction: column;
+    margin-bottom: 1rem; }
+  .footer__logo {
+    margin: 0.6rem; }
+  .footer__wallstreet {
+    padding: 0.6rem; }
+  .segundaparte__medio {
+    margin-bottom: 1rem; } }

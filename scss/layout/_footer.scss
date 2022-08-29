@@ -1,0 +1,138 @@
+.footer__primerparte {
+    font-size: 1rem;
+    color:white;
+    text-align: center;
+    width: auto;
+}
+
+.footer__primerparteindex {
+    font-size: 1rem;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.primerparte__pages {
+    justify-content: space-around;
+    background-image: url(../images/wallpaper.webp);
+}
+
+.footer__suscripcionpag, .footer__contactopag {
+    background-color: black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.footer__suscripcion, .footer__contacto {
+    background-color: black;
+    padding: 1rem;
+}
+
+.suscripcion__texto {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
+}
+
+.suscripcion__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscripcion__input {
+    width: 50%;
+    margin: 1rem;
+}
+
+.suscripcion__boton {
+    background-color: $verdemanzana;
+    color: white;
+    border: none;
+    font-family: 'Lobster', cursive;
+    height: max-content;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__texto {
+    @extend .suscripcion__texto;
+}
+
+.contacto__input {
+    width: 50%;
+    margin: 1rem;
+}
+
+.contacto__boton {
+    @extend .suscripcion__boton;
+}
+
+.footer__segundaparte {
+    display: flex;
+    flex-direction: row;
+    background-color: $verdemanzana;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.segundaparte__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 4.5rem;
+    height:4.5rem;
+    margin:0.2rem;
+}
+
+.footer__wallstreet {
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.segundaparte__medio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundaparte__navbar {
+    display: flex;
+    flex-direction: row;
+}
+.segundaparte__navitems {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.segundaparte__redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10rem;
+}
+
+.footer__whatsapp, .footer__facebook, .footer__instagram {
+    width: 2rem;
+    height:2rem;}
+

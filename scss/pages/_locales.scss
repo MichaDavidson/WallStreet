@@ -1,0 +1,38 @@
+.pagina__locales {
+    background-color: black;
+    color: white;
+}
+
+.locales__barrios {
+    justify-content: center;
+    align-items: center;
+}
+
+.belgrano, .colegiales, .nunez, .urquiza {
+    border: 0.5rem solid white;
+    border-radius: 40px;
+    text-align: center;
+    width: 30rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: black;
+}
+
+.belgrano__titulo, .colegiales__titulo, .urquiza__titulo, .nunez__titulo {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    color: $verdemanzana;
+} 
+
+.colegiales__btn, .belgrano__btn, .nunez__btn, .urquiza__btn {
+    font-family: 'Lobster', cursive;
+    background-color: $verdemanzana;
+    color:white;
+    margin-top: 0.5rem;
+}
+    
+.locales__imagen {
+    margin: 0;
+    padding:0;
+    padding-top: 2rem;
+}
