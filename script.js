@@ -21,11 +21,6 @@ const postres = [
     {id: 10, nombre:"Brownie", descripcion:"Brownie con bocha de helado de crema americana, bañado en salsa de chocolate", precio: 700, inCart: 0}
 ]
 
-// const bebidas = [
-//     {id: 11, nombre:"Gaseosas", descripcion:"Línea coca-cola", precio: 200, inCart: 0}, 
-//     {id: 12, nombre:"Agua", descripcion:"Sin/con gas", precio: 180, inCart: 0}
-// ]
-
 /////// Cards HTML /////// 
 
 function cards (htmlId, productos) {
@@ -43,36 +38,34 @@ function cards (htmlId, productos) {
         </div>`
 })};
 
-// function bebidasCards () {
-//     fetch('../products.json')
-//         .then((response) => response.json())
-//         .then(informacion => {
-//             let acumulador = "";
-//             informacion.forEach((producto) => {
-//                 acumulador += `
-//                 <div class="col-6 col-md-4 ${producto.nombre}">
-//                     <img class="${producto.nombre}__img" src="../images/${producto.id}.jpg" alt="${producto.nombre}">
-//                     <h5 class="${producto.nombre}__titulo">
-//                         <button class="${producto.nombre}__titulo" id="addToCart${producto.id}">${producto.nombre}</button>
-//                     </h5>
-//                     <div class="${producto.nombre}__detalles">
-//                         <p>${producto.descripcion}</p>
-//                         <p>$${producto.precio}</p>
-//                     </div>
-//                 </div>`
-//             })
-//             document.getElementById("cardsBebidas").innerHTML = acumulador;
-//         });
-// };
+function bebidasCards () {
+    fetch('../products.json')
+        .then((response) => response.json())
+        .then(informacion => {
+            let acumulador = "";
+            informacion.forEach((producto) => {
+                acumulador += `
+                <div class="col-6 col-md-4 ${producto.nombre}">
+                    <img class="${producto.nombre}__img" src="../images/${producto.id}.jpg" alt="${producto.nombre}">
+                    <h5 class="${producto.nombre}__titulo">
+                        <button class="${producto.nombre}__titulo" id="addToCart${producto.id}">${producto.nombre}</button>
+                    </h5>
+                    <div class="${producto.nombre}__detalles">
+                        <p>${producto.descripcion}</p>
+                        <p>$${producto.precio}</p>
+                    </div>
+                </div>`
+            })
+            document.getElementById("cardsBebidas").innerHTML = acumulador;
+        });
+        // agregarProductosAlPedido(producto);
+};
 
 cards("cardsBurgers", burgers);
 cards("cardsSides", sides);
 cards("cardsPostres", postres);
 
-// bebidasCards();
-
-// cards("cardsBebidas", bebidas);
-
+bebidasCards();
 
 /////// Evento para agregar productos al carrito ///////
 
@@ -105,7 +98,6 @@ function agregarProductosAlPedido(productos) {
 agregarProductosAlPedido(burgers);
 agregarProductosAlPedido(sides);
 agregarProductosAlPedido(postres);
-// agregarProductosAlPedido(bebidas);
 
 /////// Función costo total ///////
 
@@ -131,7 +123,7 @@ function modalCarrito(producto) {
             productos.innerHTML += 
             `<div class="products-container">
                 <div class="products">
-                    <ion-icon name="close-circle-outline" id="btnEliminar"></ion-icon>
+                    <ion-icon name="close-circle-outline" id="btnEliminar" onclick="eliminarProductos(event)"></ion-icon>
                     <span>${producto.nombre} - x${producto.inCart} - $${producto.inCart*producto.precio}<span/>
                 </div>
             </div>`
@@ -154,32 +146,22 @@ function finalizarPedido() {
 };
 
 /////// Función para eliminar productos ///////
-let btnEliminar = document.getElementById("btnEliminar");
-for (let i = 0; i < btnEliminar.length; i++) {
-    let button = btnEliminar[i];
-    button.addEventListener("click", eliminarProductos);
+
+function eliminarProducto (deleted) {
+
+    let btnEliminar = document.getElementById("btnEliminar");
+    console.log(btnEliminar);
+    
+    let productoEliminado = carritoPedido.findIndex((producto) => producto.nombre == deleted)
+    
+    btnEliminar.addEventListener("click", () => {
+        if (productoEliminado != -1) {
+            carritoPedido.splice(productoEliminado, 1)
+            producto.inCart --
+        } else {
+            alert("Ese producto no está en el carrito")
+        };
+    });
 };
 
-function eliminarProductos(event) {
-    let btnClicked = event.target;
-    btnClicked.parentElement.parentElement.remove()
-};
-
-// function eliminarProducto (deleted) {
-
-    // let btnEliminar = document.getElementById("btnEliminar");
-//     console.log(btnEliminar);
-    
-//     let productoEliminado = carritoPedido.findIndex((producto) => producto.nombre == deleted)
-    
-//     btnEliminar.addEventListener("click", () => {
-//         if (productoEliminado != -1) {
-//             carritoPedido.splice(productoEliminado, 1)
-//             producto.inCart --
-//         } else {
-//             alert("Ese producto no está en el carrito")
-//         };
-//     });
-// };
-
-// eliminarProducto();
+eliminarProducto();
